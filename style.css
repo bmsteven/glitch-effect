@@ -1,0 +1,226 @@
+:root {
+  --primary-color: #fb0093;
+  --primary-color-light: rgba(251, 0, 147, 0.05);
+  --secondary-color: #161414;
+  --faint-secondary-color: rgba(22, 20, 20, 0.5);
+  --text-color: #f3f0f0;
+  --faint-text-color: rgba(243, 240, 240, 0.2);
+  --contact-background: #0c0c0c;
+  --white-color: #ffffff;
+  --faint-white: #c2bcbc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow-x: hidden; */
+  height: 100vh;
+  background: #4e3273;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  color: #a33737;
+  font-size: 120px;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  margin-top: 50px;
+}
+
+a:hover {
+  color: #fb0093;
+}
+
+h1::before,
+h1::after {
+  content: "KODEMUNIT";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: #f2f2f2;
+  /* background-color: #4e3273; */
+}
+
+h1::before {
+  left: 8px;
+  text-shadow: 2px 0 #00ffea;
+  animation: effect 5s infinite linear;
+}
+
+h1::before {
+  left: 4px;
+  text-shadow: -2px 0 #00ffea;
+  animation: effect 3s infinite linear;
+}
+
+@keyframes effect {
+  0% {
+    clip: rect(55px, 9999px, 56px, 0);
+  }
+
+  5% {
+    clip: rect(55px, 9999px, 38px, 0);
+  }
+
+  10% {
+    clip: rect(55px, 9999px, 36px, 0);
+  }
+
+  15% {
+    clip: rect(55px, 9999px, 9px, 0);
+  }
+
+  20% {
+    clip: rect(55px, 9999px, 59px, 0);
+  }
+
+  25% {
+    clip: rect(55px, 9999px, 98px, 0);
+  }
+
+  30% {
+    clip: rect(55px, 9999px, 77px, 0);
+  }
+
+  35% {
+    clip: rect(55px, 9999px, 34px, 0);
+  }
+
+  40% {
+    clip: rect(55px, 9999px, 72px, 0);
+  }
+
+  45% {
+    clip: rect(55px, 9999px, 150px, 0);
+  }
+
+  50% {
+    clip: rect(55px, 9999px, 60px, 0);
+  }
+
+  55% {
+    clip: rect(55px, 9999px, 199px, 0);
+  }
+
+  60% {
+    clip: rect(55px, 9999px, 91px, 0);
+  }
+
+  65% {
+    clip: rect(55px, 9999px, 38px, 0);
+  }
+
+  70% {
+    clip: rect(55px, 9999px, 73px, 0);
+  }
+
+  75% {
+    clip: rect(55px, 9999px, 87px, 0);
+  }
+
+  80% {
+    clip: rect(55px, 9999px, 14px, 0);
+  }
+
+  85% {
+    clip: rect(55px, 9999px, 87px, 0);
+  }
+
+  90% {
+    clip: rect(0px, 9999px, 150px, 0);
+  }
+
+  95% {
+    clip: rect(55px, 9999px, 78px, 0);
+  }
+
+  100% {
+    clip: rect(55px, 9999px, 79px, 0);
+  }
+}
+
+/* 
+@-webkit-keyframes effect {
+    0% {
+        clip: rect(55px, 9999px, 56px, 0);
+    }
+    5% {
+        clip: rect(55px, 9999px, 38px, 0);
+    }
+    10% {
+        clip: rect(55px, 9999px, 36px, 0);
+    }
+    15% {
+        clip: rect(55px, 9999px, 9px, 0);
+    }
+    20% {
+        clip: rect(55px, 9999px, 59px, 0);
+    }
+    25% {
+        clip: rect(55px, 9999px, 98px, 0);
+    }
+    30% {
+        clip: rect(55px, 9999px, 77px, 0);
+    }
+    35% {
+        clip: rect(55px, 9999px, 34px, 0);
+    }
+    40% {
+        clip: rect(55px, 9999px, 72px, 0);
+    }
+    45% {
+        clip: rect(55px, 9999px, 81px, 0);
+    }
+    50% {
+        clip: rect(55px, 9999px, 60px, 0);
+    }
+    55% {
+        clip: rect(55px, 9999px, 89px, 0);
+    }
+    60% {
+        clip: rect(55px, 9999px, 91px, 0);
+    }
+    65% {
+        clip: rect(55px, 9999px, 38px, 0);
+    }
+    70% {
+        clip: rect(55px, 9999px, 73px, 0);
+    }
+    75% {
+        clip: rect(55px, 9999px, 87px, 0);
+    }
+    80% {
+        clip: rect(55px, 9999px, 14px, 0);
+    }
+    85% {
+        clip: rect(55px, 9999px, 87px, 0);
+    }
+    90% {
+        clip: rect(55px, 9999px, 50px, 0);
+    }
+    95% {
+        clip: rect(55px, 9999px, 78px, 0);
+    }
+    100% {
+        clip: rect(55px, 9999px, 79px, 0);
+    }
+} */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+}
